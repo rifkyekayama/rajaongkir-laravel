@@ -4,9 +4,7 @@
 
 Installasi dilakukan menggunakan Composer. Ubah file `composer.json` dan tambahkan `rifkyekayama/rajaongkir-laravel`.
 
-	"require-dev": {
-		"rifkyekayama/rajaongkir-laravel": "dev-master"
-	}
+	composer require rifkyekayama/rajaongkir-laravel
 
 Selanjutnya, update Composer dari Terminal:
 
@@ -36,5 +34,5 @@ Tambahkan setting pada `.env`
 
 	RAJAONGKIR_ACCOUNT_TYPE=pro
 	RAJAONGKIR_APIKEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-	>RAJAONGKIR_ACCOUNT_TYPE dapat diisi dengan `starter`, `basic`, `pro`
+	> RAJAONGKIR_ACCOUNT_TYPE dapat diisi dengan `starter`, `basic`, `pro`
 
