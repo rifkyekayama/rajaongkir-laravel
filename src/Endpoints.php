@@ -62,15 +62,19 @@ class Endpoints {
     /**
      * Fungsi untuk mendapatkan data ongkos kirim
      * @param integer $origin ID kota asal
+     * @param string $originType tipe kota asal 'city' atau 'subdistrict'
      * @param integer $destination ID kota tujuan
+     * @param string $destinationType tipe kota tujuan 'city' atau 'subdistrict'
      * @param integer $weight Berat kiriman dalam gram
      * @param string $courier Kode kurir
      * @return string Response dari cURL, berupa string JSON balasan dari RajaOngkir
      */
-    public function cost($origin, $destination, $weight, $courier) {
+    public function cost($origin, $originType, $destination, $destinationType, $weight, $courier) {
         $params = array(
             'origin' => $origin,
+            'originType' => $originType,
             'destination' => $destination,
+            'destinationType' => $destinationType,
             'weight' => $weight,
             'courier' => $courier
         );
