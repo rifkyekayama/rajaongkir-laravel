@@ -19,11 +19,11 @@ class RESTClient {
 		$this->endpoint = $endpoint;
 		$this->account_type = $account_type;
 		if($account_type == "starter"){
-			$this->api_url = "http://api.rajaongkir.com/starter";
+			$this->api_url = "https://api.rajaongkir.com/starter";
 		}else if($account_type == "basic"){
-			$this->api_url = "http://api.rajaongkir.com/basic";
+			$this->api_url = "https://api.rajaongkir.com/basic";
 		}else if($account_type == "pro"){
-			$this->api_url = "http://pro.rajaongkir.com/api";
+			$this->api_url = "https://pro.rajaongkir.com/api";
 		}
 	}
 
